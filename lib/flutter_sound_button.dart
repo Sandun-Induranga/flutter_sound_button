@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sound_button/default_sounds.dart';
 import 'package:flutter_sound_button/src/sound_player.dart';
-import 'package:flutter/services.dart'; // For haptic feedback
+import 'package:flutter/services.dart';
 
 class SoundButton extends StatefulWidget {
-  final String? soundPath; // Custom sound file path (e.g., 'assets/sounds/click.mp3')
+  final String?
+  soundPath; // Custom sound file path (e.g., 'assets/sounds/click.mp3')
   final DefaultSound? defaultSound; // Predefined sound option
   final double volume; // Volume (0.0 to 1.0)
   final double playbackSpeed; // Playback speed (e.g., 1.0 = normal)
@@ -25,8 +26,10 @@ class SoundButton extends StatefulWidget {
     required this.child,
     this.onPressed,
     this.style,
-  }) : assert(soundPath != null || defaultSound != null,
-  'Either soundPath or defaultSound must be provided');
+  }) : assert(
+         soundPath != null || defaultSound != null,
+         'Either soundPath or defaultSound must be provided',
+       );
 
   @override
   State<SoundButton> createState() => _SoundButtonState();
@@ -43,15 +46,18 @@ class _SoundButtonState extends State<SoundButton> {
   }
 
   Future<void> _initSound() async {
-    final soundPath = widget.soundPath ??
+    final soundPath =
+        widget.soundPath ??
         (widget.defaultSound != null
             ? defaultSoundPaths[widget.defaultSound]
             : null);
     if (soundPath != null) {
-      await _player.loadSound(soundPath,
-          volume: widget.volume,
-          speed: widget.playbackSpeed,
-          loop: widget.loopSound);
+      await _player.loadSound(
+        soundPath,
+        volume: widget.volume,
+        speed: widget.playbackSpeed,
+        loop: widget.loopSound,
+      );
     }
   }
 
@@ -71,7 +77,13 @@ class _SoundButtonState extends State<SoundButton> {
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: _playSound,
-      style: widget.style ?? ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8))),
+      style:
+          widget.style ??
+          ElevatedButton.styleFrom(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(8),
+            ),
+          ),
       child: widget.child,
     );
   }

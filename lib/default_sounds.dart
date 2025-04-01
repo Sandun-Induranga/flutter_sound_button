@@ -5,7 +5,7 @@ enum DefaultSound {
 }
 
 const Map<DefaultSound, String> defaultSoundPaths = {
-  DefaultSound.click: 'assets/sounds/click.wav',
+  DefaultSound.click: 'assets/sounds/click.mp3',
   DefaultSound.beep: 'assets/sounds/beep.mp3',
-  DefaultSound.chime: 'assets/sounds/chime.ogg',
+  DefaultSound.chime: 'assets/sounds/chime.mp3',
 };
