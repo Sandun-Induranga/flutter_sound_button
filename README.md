@@ -1,16 +1,27 @@
 # flutter_sound_button
 
-A new Flutter project.
+A customizable Flutter widget that creates buttons with sound effects. Play default sounds like clicks, beeps, or chimes, or add your own custom audio files—all with a simple API. Enhance your app’s interactivity with adjustable volume, playback speed, haptic feedback, and more!
 
-## Getting Started
+[![Pub Version](https://img.shields.io/pub/v/flutter_sound_button)](https://pub.dev/packages/flutter_sound_button)  
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Default Sounds**: Preloaded options including `click`, `beep`, and `chime`.
+- **Custom Sounds**: Load your own audio files from assets or file paths.
+- **Sound Customization**: Adjust volume, playback speed, and looping behavior.
+- **Haptic Feedback**: Optional vibration on press for a tactile experience.
+- **Styling**: Fully customizable button appearance (shape, color, icons, etc.).
+- **Lightweight**: Built with `just_audio` for efficient audio playback.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## Installation
+
+Add `flutter_sound_button` to your project by including it in your `pubspec.yaml`:
+
+```yaml
+dependencies:
+  flutter_sound_button: ^0.0.1
