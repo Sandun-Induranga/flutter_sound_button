@@ -21,6 +21,4 @@ dev_dependencies:
 
 flutter:
   assets:
-    - assets/sounds/click.mp3
-    - assets/sounds/beep.mp3
-    - assets/sounds/chime.mp3
+    - assets/sounds/
