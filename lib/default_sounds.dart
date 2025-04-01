@@ -5,7 +5,7 @@ enum DefaultSound {
 }
 
 const Map<DefaultSound, String> defaultSoundPaths = {
-  DefaultSound.click: 'assets/sounds/click.mp3',
-  DefaultSound.beep: 'assets/sounds/beep.mp3',
-  DefaultSound.chime: 'assets/sounds/chime.mp3',
+  DefaultSound.click: 'packages/flutter_sound_button/assets/sounds/click.mp3',
+  DefaultSound.beep: 'packages/flutter_sound_button/assets/sounds/beep.mp3',
+  DefaultSound.chime: 'packages/flutter_sound_button/assets/sounds/chime.mp3'
 };
