@@ -3,7 +3,7 @@ description: A customizable Flutter button widget that plays sound effects on pr
 homepage: https://github.com/Sandun-Induranga/flutter_sound_button
 repository: https://github.com/Sandun-Induranga/flutter_sound_button.git
 
-version: 0.0.5
+version: 0.0.6
 
 environment:
   sdk: '>=2.19.0 <3.0.0'
