@@ -24,7 +24,7 @@ Add `flutter_sound_button` to your project by including it in your `pubspec.yaml
 
 ```yaml
 dependencies:
-  flutter_sound_button: ^0.0.1
+  flutter_sound_button: latest_version
 ```
 
 Then run:
