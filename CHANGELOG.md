@@ -10,6 +10,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
   - Introduce multi-sound randomization (e.g., play a random sound from a list).
   - Sync sound playback with button press animations (e.g., scale or bounce effects).
 
+## [0.0.7] - 2025-04-04
+
+### Changed
+- Updated Sound Files
+  - Replaced `click.mp3`, `beep.mp3`, and `chime.mp3` with higher quality versions.
+
 ## [0.0.6] - 2025-04-02
 
 ### Added

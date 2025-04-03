@@ -72,7 +72,7 @@ You can also use your own audio files:
 
 ```dart
 SoundButton(
-  soundPath: SoundButtonSound.custom("assets/sounds/custom_sound.mp3"),
+  soundPath: "assets/sounds/custom_sound.mp3",
   volume: 0.8,
   playbackSpeed: 1.2,
   enableHaptic: true,
